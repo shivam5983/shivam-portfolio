@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .contact-container {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .success {
+        color: green;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .error {
+        color: red;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="text" id="subject" placeholder="Subject" required />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+        <div id="responseMessage"></div>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const subject = document.getElementById("subject").value.trim();
+          const message = document.getElementById("message").value.trim();
+          const response = document.getElementById("responseMessage");
+
+          if (!name || !email || !subject || !message) {
+            response.textContent = "Please fill out all fields.";
+            response.className = "error";
+            return;
+          }
+
+          // Simulate sending (could replace with actual API call)
+          setTimeout(() => {
+            response.textContent = "Message sent successfully!";
+            response.className = "success";
+            document.getElementById("contactForm").reset();
+          }, 500);
+        });
+    </script>
+  </body>
+</html>

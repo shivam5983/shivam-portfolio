@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio website complete</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Shivam</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+
+            <li class="nav__item">
+              <a
+                href="css/shivamResumeFinal.pdf"
+                class="nav__link"
+                target="_parent"
+              >
+                View Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hello,<br />I'am <span class="home__title-color">Shivam</span><br />
+            Web Developer
+          </h1>
+
+          <a href="contact.html" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/shivam-verma1204--/"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+
+          <a href="https://github.com/shivam5983" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+
+          <a
+            href="https://www.instagram.com/shivam_04verma/"
+            class="home__social-icon"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="60"
+                href="css/img/perfil.jpg"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="css/img/about.jpg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle"></h2>
+            <p class="about__text">
+             <b>Shivam </b> is a passionate data science student with a deep understanding of
+              the tech industry, ready to thrive in the dynamic world of data.
+              The academic journey has equipped with strong analytical
+              and problem-solving skills, alongside hands-on experience in
+              Python, R, SQL, and machine learning. With a solid foundation in
+              data visualization tools like Tableau, I'm eager to apply
+              the knowledge to real-world challenges.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Professional Skills</h2>
+            <p class="skills__text">
+              I am proficient in both frontend and backend development with
+              hands-on experience in HTML5, CSS3, JavaScript, React.js, and
+              Node.js. I have a strong foundation in C++ with a focus on data
+              structures, algorithms, and problem-solving. I am also skilled in
+              designing user-friendly interfaces with a keen eye for UX/UI
+              principles.
+            </p>
+
+            <!-- Existing Skills -->
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div><span class="skills__percentage">95%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div><span class="skills__percentage">85%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JavaScript</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div><span class="skills__percentage">75%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">UX/UI</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div><span class="skills__percentage">85%</span></div>
+            </div>
+
+           
+        
+      </section>
+
+      <!--===== PROJECTS =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects__container">
+          <div class="project__card">
+            <a href="https://n8zqwz.csb.app/" target="_blank">
+              <img
+                src="css/img/project1.png"
+                alt="Flight Booking"
+                class="project__img"
+              />
+            </a>
+            <h3 class="project__title">Flight Booking</h3>
+          </div>
+
+          <div class="project__card">
+            <a
+              href="https://github.com/shivam5983/ELectric-Vehicle-Data-Analysis"
+              target="_blank"
+            >
+              <img
+                src="css/img/project2.png"
+                alt="EV Analysis"
+                class="project__img"
+              />
+            </a>
+            <h3 class="project__title">EV Data Analysis</h3>
+          </div>
+
+          <div class="project__card">
+            <a href="https://wfftrg.csb.app/" target="_blank">
+              <img
+                src="css/img/project3.png"
+                alt="Medical Website"
+                class="project__img"
+              />
+            </a>
+            <h3 class="project__title">Medical Website</h3>
+          </div>
+
+          <div class="project__card">
+            <a href="#">
+              <img
+                src="css/img/project4.png"
+                alt="Frontend Project"
+                class="project__img"
+              />
+            </a>
+            <h3 class="project__title">Frontend Project</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SUMMER TRAINING =====-->
+
+      <!--===== SUMMER TRAINING =====-->
+      <section class="summer-training section" id="summer-training">
+        <h2 class="section-title">Summer Training</h2>
+
+        <div
+          class="summer-training__container bd-grid"
+          style="text-align: center"
+        >
+          <div class="training__item">
+            <h3
+              class="training__title"
+              style="font-size: 24px; font-weight: bold"
+            >
+              Data Structures and Algorithms (C++)
+            </h3>
+
+            <a href="css/img/gfg_dsa_certificate.png" target="_blank">
+              <img
+                src="css/img/Dsa.png"
+                alt="GFG DSA Certificate"
+                style="
+                  width: 60%;
+                  max-width: 600px;
+                  border-radius: 12px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                  margin: 20px 0;
+                  cursor: pointer;
+                "
+              />
+            </a>
+
+            <p
+              class="training__description"
+              style="font-size: 18px; line-height: 1.6; text-align: justify"
+            >
+              During my summer training, I successfully completed the
+              GeeksforGeeks course on
+              <strong>Data Structures and Algorithms using C++</strong>.
+              Throughout the course, I gained a deep understanding of key DSA
+              concepts such as arrays, linked lists, stacks, queues, trees,
+              graphs, dynamic programming, and advanced algorithms. <br /><br />
+              <strong>Outcomes:</strong> This training greatly enhanced my
+              problem-solving ability, strengthened my coding skills, improved
+              my algorithmic thinking, and prepared me for coding interviews and
+              competitive programming challenges.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== ACHIEVEMENTS =====-->
+      <section class="achievements section" id="achievements">
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="achievements__container bd-grid">
+          <div class="achievement__item">
+            <h3 class="achievement__title">
+              NPTEL Certification – Cloud Computing (IIT Kharagpur)
+            </h3>
+            <p class="achievement__description">
+              Successfully completed the NPTEL course "Cloud Computing" offered
+              by IIT Kharagpur. Gained in-depth knowledge of cloud architecture,
+              service models (IaaS, PaaS, SaaS), virtualization, security
+              challenges, and cloud-based application development. Developed a
+              strong foundation for building scalable and efficient cloud
+              solutions.
+            </p>
+            <!-- Image for the achievement -->
+            <img
+              src="css/img/Nptel.png"
+              alt="NPTEL Cloud Computing Certification"
+              class="achievement__image"
+            />
+          </div>
+
+          <div class="achievement__item">
+            <h3 class="achievement__title">HackerRank 3-Star Coder</h3>
+            <p class="achievement__description">
+              Earned a 3-star rating on HackerRank, demonstrating proficiency in
+              problem-solving and coding. Successfully tackled a wide range of
+              algorithmic challenges, enhancing my skills in data structures,
+              algorithms, and efficient problem-solving techniques.
+            </p>
+            <!-- Image for the achievement -->
+            <img
+              src="css/img/hackerrank.png"
+              alt="HackerRank 3-Star Coder"
+              class="achievement__image"
+            />
+          </div>
+
+          <div class="achievement__item">
+            <h3 class="achievement__title">
+              First Runner-Up – Cognitia 25, LPU Tech Fest
+            </h3>
+            <p class="achievement__description">
+              Secured the First Runner-Up position in Cognitia 25, the flagship
+              tech fest at Lovely Professional University. This accomplishment
+              showcases my competitive spirit and ability to excel in technical
+              challenges and problem-solving in a high-pressure environment.
+            </p>
+            <!-- Image for the achievement -->
+            <img
+              src="css/img/achievmnets.avif"
+              alt="Cognitia 25 Tech Fest"
+              class="achievement__image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--===== CERTIFICATIONS =====-->
+      <section class="certifications section" id="certifications">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+
+        <div class="certifications__container bd-grid">
+          <div class="certification__item">
+            <h3 class="certification__title">Cloud Computing</h3>
+            <a href="css/img/Nptel.png" target="_blank">
+              <img
+                src="css/img/Nptel.png"
+                alt="Cloud Computing Certificate"
+                style="
+                  width: 100%;
+                  max-width: 600px;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                  cursor: pointer;
+                "
+              />
+            </a>
+            <p class="certification__description">
+              Completed NPTEL Cloud Computing by IIT Kharagpur — learned core
+              concepts like virtualization, cloud models, and scalable
+              deployment strategies.
+            </p>
+          </div>
+
+          <div class="certification__item">
+            <h3 class="certification__title">Summer Internship (C++)</h3>
+            <img
+              src="css/img/Dsa.png"
+              alt="Summer Internship Certificate"
+              style="
+                width: 100%;
+                max-width: 600px;
+                border-radius: 10px;
+                margin-top: 10px;
+              "
+            />
+            <p class="certification__description">
+              Completed a 6-week live internship on C++ by Techvanto Academy,
+              gaining hands-on experience in advanced concepts and real-world
+              programming.
+            </p>
+          </div>
+
+          <div class="certification__item">
+            <h3 class="certification__title">Dynamic Programming</h3>
+            <img
+              src="css/img/cpp.png"
+              alt="Dynamic Programming Certificate"
+              style="
+                width: 100%;
+                max-width: 600px;
+                border-radius: 10px;
+                margin-top: 10px;
+              "
+            />
+            <p class="certification__description">
+              Completed the 'Dynamic Programming, Greedy Algorithms' course by
+              the University of Colorado Boulder on Coursera, enhancing skills
+              in algorithms, problem-solving, and programming.
+            </p>
+          </div>
+
+          <div class="certification__item">
+            <h3 class="certification__title">Generative AI</h3>
+            <img
+              src="css/img/Genai.png"
+              alt="Generative AI Certificate"
+              style="
+                width: 100%;
+                max-width: 600px;
+                border-radius: 10px;
+                margin-top: 10px;
+              "
+            />
+            <p class="certification__description">
+              Completed the 'Generative AI for Everyone' course by
+              DeepLearning.AI on Coursera, learning about generative AI, its use
+              cases, and the lifecycle of AI projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== ACADEMICS =====-->
+      <section class="academics section" id="academics">
+        <h2 class="section-title">Academics</h2>
+
+        <div class="academics__container bd-grid">
+          <div class="academic__item">
+            <h3 class="academic__title">
+              Bachelor of Technology (B.Tech) - Computer Science
+            </h3>
+            <p class="academic__info">Lovely Professional University, Punjab</p>
+            <p class="academic__info">2022 - Ongoing</p>
+            <p class="academic__info">CGPA: 7.2</p>
+          </div>
+
+          <div class="academic__item">
+            <h3 class="academic__title">Senior Secondary (Class 12)</h3>
+            <p class="academic__info">Naga Ji Saraswati Vidya Mandir, Ballia</p>
+            <p class="academic__info">2019 - 2021</p>
+            <p class="academic__info">Percentage: 82%</p>
+          </div>
+
+          <div class="academic__item">
+            <h3 class="academic__title">High School (Class 10)</h3>
+            <p class="academic__info">Shemushi Vidyapeeth, Ballia</p>
+            <p class="academic__info">2017 - 2019</p>
+            <p class="academic__info">Percentage: 86%</p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              placeholder="Write a message..."
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input
+              type="button"
+              value="Submit"
+              class="contact__button button"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Shivam</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
